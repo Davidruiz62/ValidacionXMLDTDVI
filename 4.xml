@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: David Ruiz
+Curso: Daw1
+Fecha 05/04/2025
+Ejercicio 4
+-->
+<!--Lista de la compra-->
+<!DOCTYPE listaCompra [
+  <!ELEMENT listaCompra (item*)>
+  <!ELEMENT item EMPTY>
+  <!ATTLIST item nombre CDATA #REQUIRED
+                   cantidad CDATA #REQUIRED>
+]>
+<listaCompra>
+  <item nombre="leche" cantidad="12 litros" />
+  <item nombre="pan" cantidad="3 barras de cuarto" />
+</listaCompra>

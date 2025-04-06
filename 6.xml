@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: David Ruiz
+Curso: Daw1
+Fecha 05/04/2025
+Ejercicio 6
+-->
+<!--Jugadores y equipos de futbol-->
+<!DOCTYPE futbol [
+  <!ELEMENT futbol (jugador|equipo)*>
+  <!ELEMENT jugador EMPTY>
+  <!ELEMENT equipo EMPTY>
+  <!ATTLIST jugador nombre CDATA #REQUIRED
+                     codigo CDATA #REQUIRED>
+  <!ATTLIST equipo nombre CDATA #REQUIRED
+                   jugadores CDATA #IMPLIED>
+]>
+<futbol>
+  <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+  <jugador nombre="Edson Arantes do Nascimento" codigo="ean" />
+  <jugador nombre="Diego Armando Maradona" codigo="dam"/>
+  <jugador nombre="Johan Cruyff" codigo="jc"/>
+  <equipo nombre="Società Sportiva Calcio Napoli" jugadores="Maradona" />
+  <equipo nombre="Futbol Club Barcelona" jugadores="Cruyff, Maradona" />
+</futbol>

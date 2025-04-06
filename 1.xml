@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Nombre: David Ruiz
+Curso: Daw1
+Fecha 05/04/2025
+Ejercicio 1
+-->
+<!--Datos personales-->
+<!DOCTYPE persona [
+  <!ELEMENT persona EMPTY>
+  <!ATTLIST persona nombre CDATA #IMPLIED
+                     dni CDATA #REQUIRED>
+]>
+<persona dni="03141592E" />
